@@ -1,0 +1,288 @@
+body
+{
+    /* margin: auto; will set the margin in all side equally according to the content inside */
+    margin: 0;
+    padding: 0;
+    /* font-family shd hav multiple options so that if the browser doesnt have that style then secondary will be applied; */
+    font-family: sans-serif;
+}
+
+.headercontainer
+{
+    background-color: #35424a;
+    color: white;
+    overflow: hidden;
+    min-height: 100px;
+    border-bottom: 3px solid red;
+    text-align: center;
+}
+
+.heading-left
+{
+    float: left;
+    padding-left: 100px;
+}
+
+
+.heading-right 
+{
+    float: right;
+    margin-top: 20px;
+    margin-right: 150px;
+}
+
+.heading-right ul{
+    word-spacing: 2em;
+}
+.heading-right li
+{
+    display: inline;
+}
+
+.heading-right a
+{
+    color: white;
+    text-decoration: none;
+}
+
+header #highlight , .heading-right .current a
+{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+.heading-right :hover
+{
+    color: #cccccc;
+}
+
+/* showcase area */
+.container
+{
+    /* this min-height: is used so that when the page is shrinked then this mininum amount of height shd be given to the image/section; */
+    min-height: 400px;
+    background-image: url("./images/showcase.jpg");
+    /* background-size: cover; this is used when we want the entire image of losing its clarity */
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: -400px;
+    /* this background can be done in a single line 
+    background:url("./images/showcase.jpg") no-repeat 0 -400px;
+    */
+    text-align: center;
+}
+
+.container h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 0px;
+    color: white;
+    padding-top: 100px;
+    font-weight: bolder;
+}
+
+.container p
+{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 175px 0 175px;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+/* newsletter area */
+
+#newsletter1
+{
+    background-color: #35424a;
+    overflow: hidden;
+    /* insteading of simply height we shd min-height so that when the is minimized it look responsive */
+    min-height: 100px;
+}
+
+#newsletter1 h1{
+    padding-top: 15px;
+    margin-left: 120px;
+    float: left;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#newsletter1 form
+{
+    float: right;
+    padding-right: 120px;
+    margin: 15px 30px 20px 0;
+    padding-top: 15px;
+}
+
+#newsletter1 form input
+{
+    height: 30px;
+    width: 235px;
+    padding-left: 5px;
+}
+
+#newsletter1 form button
+{
+    padding: 6px;
+    background-color:#e8491d;
+    border: 1px rgb(99, 99, 146) solid;
+    height: 37px;
+    color: white;
+}
+
+/* course area */
+
+.coursedivison
+{
+    display: flex;
+    margin: 40px 0px 60px 110px;
+    width: 75%;
+    height: 200px;
+}
+
+.coursedivison div{
+    text-align: center;
+    margin: 0px 20px 0  20px;
+    flex: 1;
+}
+
+.coursedivison div img
+{
+    height: 90px;
+}
+
+.footermain
+{
+    background-color: #e8491d;
+    height: 90px;
+    overflow: hidden;
+}
+
+.footermain div
+{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* about styling start here */
+
+.contentDivison
+{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+.contentleft
+{
+    float: left;
+    width: 65%;
+    line-height: 1.5em;
+}
+
+#abtmiddle
+{
+    background-color: #152c3a;
+    color: white;
+    padding: 10px;
+}
+.contentright
+{
+    float: right;
+    width: 25%;
+    background-color: #152c3a;
+    color: white;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 15px;
+    line-height: 1.5em;
+    height: 250px;
+}
+
+/* media queries 
+@media(max-width: 768px) {
+.heading-left, .heading-right, .heading-right li,
+ .newsletter1-left , #newsletter1 form
+.left, .middle ,.right
+ {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.heading-left h1
+{
+    margin-right: 180px;
+}
+
+.container h1
+{
+    padding-top: 30px;
+}
+
+.newsletter1-left h1 
+{
+    padding-left: 70px;
+}
+}
+*/
+
+/* Services area */
+
+.servcContainer
+{
+    overflow: hidden;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+.servleft
+{
+    float: left;
+    width: 65%;
+    margin-left: 8px;
+}
+.servleft div
+{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+}
+.servright
+{
+    float: right;
+    width: 30%;
+    background-color: #152c3a;
+    color: white;
+    margin-top: 20px;
+}
+.servright form
+{
+    padding: 10px;
+}
+
+.servright form input
+{
+    width: 82%;
+    padding: 5px 0 5px 2px ; 
+}
+
+.servright form textarea
+{
+    padding: 5px 0 10px 10px;
+    width: 80%;
+    height: 25px;
+}
+
+.servright form button
+{
+    background-color: #e8491d ;
+    color: white;
+    border: none;
+    width: 16%;
+    height: 40px;
+}
