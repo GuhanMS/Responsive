@@ -31,7 +31,8 @@ body
     margin-right: 150px;
 }
 
-.heading-right ul{
+.heading-right ul
+{
     word-spacing: 2em;
 }
 .heading-right li
@@ -70,6 +71,7 @@ header #highlight , .heading-right .current a
     background:url("./images/showcase.jpg") no-repeat 0 -400px;
     */
     text-align: center;
+    overflow: hidden;
 }
 
 .container h1{
